@@ -1,0 +1,26 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+
+
+Welcome to your new app.
+
+<ParaParametro titulo="Blazor Course"
+               descripcion="prueba"
+               precio="59.99"
+               lista="@miLista"
+               footer=@("Powered by " + miNombre)></ParaParametro>
+
+<!--Le paso una lista vacía para que no de error, si hay 4 parámetros y hay uno que no pongo, da error-->
+<ParaParametro titulo="Blazor Course"
+               descripcion="prueba"
+               precio="59.99"
+               lista="new List<string>{}"
+               footer=@("Powered by " + miNombre)>
+</ParaParametro>
+
+@code {
+    List<string> miLista = new List<string> { "aa", "bb", "cc" };
+    public string miNombre = "Leire";
+}

@@ -1,0 +1,12 @@
+﻿@page "/contactos"
+@inject HttpClient Http
+
+<PageTitle>Contactos</PageTitle>
+
+<h1>Contacta con nosotros</h1>
+<input @bind="@nombre" @bind:event="oninput"/>
+<p>@nombre</p>
+
+@code {
+    public string nombre { get; set; } = "Leire";
+}

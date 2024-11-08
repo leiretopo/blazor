@@ -1,0 +1,25 @@
+﻿<h1>Estoy en el componente Parámetro</h1>
+<h3>@titulo</h3>
+<p>@descripcion</p>
+<p>@precio</p>
+@foreach (var item in lista)
+{
+    <ul>
+        <li>@item</li>
+    </ul>
+}
+<p>@footer</p>
+
+@code {
+    //Parameter indica que el parámetro va a recibir del padre
+    [Parameter]
+    public string titulo { get; set; }
+    [Parameter]
+    public string descripcion { get; set; }
+    [Parameter]
+    public List<string> lista { get; set; }
+    [Parameter]
+    public double precio { get; set; }
+    [Parameter]
+    public string footer { get; set; }
+}

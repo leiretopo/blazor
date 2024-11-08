@@ -1,0 +1,19 @@
+﻿@page "/counter"
+
+<PageTitle>Lotería</PageTitle>
+
+<h1>@micurso</h1>
+@foreach (var item in numerosLoteria)
+{
+    <ul>
+        <li>@item</li>
+    </ul>
+}
+<button type="button" class="@estiloBtn">Haz clic</button>
+
+@code{
+    public string micurso { get; set; } = "Blazor lotería";
+
+    List<int> numerosLoteria = new List<int> { 3, 11, 98, 1, 24 };
+    string estiloBtn = "btn btn-primary btn-lg active";
+}
