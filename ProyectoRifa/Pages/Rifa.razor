@@ -1,0 +1,35 @@
+﻿@page "/"
+
+<PageTitle>PROYECTO RIFA</PageTitle>
+
+<h1>GANADOR RIFA</h1>
+<p>
+    <input type="checkbox" @bind=saveWinner/> Save Winner ?
+</p>
+
+<p>Pulsa este texto para elegir un número ganador:</p>
+<p @onclick=pickWinner>Winner number: @winnerNumber</p>
+<ul>
+    @foreach (var item in winners)
+    {
+        <li>@item</li>
+    }
+</ul>
+<input @bind=inputValue/>
+
+@code {
+    public bool saveWinner;
+    public int inputValue = 888;
+    public int winnerNumber { get; set; }
+
+    public List<int> winners { get; set; } = new List<int>();
+    void pickWinner()
+    {
+        winnerNumber = new Random().Next(0, 1000);
+        if (saveWinner)
+        {
+            winners.Add(winnerNumber);
+        }
+        
+    }
+}

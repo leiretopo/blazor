@@ -1,0 +1,70 @@
+﻿@page "/peliculas"
+
+<PageTitle>Películas</PageTitle>
+<h1 style="color: @miColor; font-size:@textSize">Listado de Películas</h1>
+
+<select @bind=miColor>
+    <option value="red">Rojo</option>
+    <option value="blue">Azul</option>
+    <option value="green">Verde</option>
+</select>
+
+<select @bind=textSize>
+    <option value="34px">34px</option>
+    <option value="38px">38px</option>
+    <option value="42px">42px</option>
+</select>
+
+
+@if (listaPeliculas == null)
+{
+    <p>No hay películas</p>
+} else
+{
+   /* <ul>
+        @foreach (var pelicula in listaPeliculas)
+        {
+            <p>Título: @pelicula.Titulo</p>
+            <p>Fecha: @pelicula.Lanzamiento.ToShortDateString()</p>
+        }
+    </ul>*/
+    @for (int i = 0; i < listaPeliculas.Count(); i++)
+    {
+        if (i == listaPeliculas.Count() - 1)
+        {
+            <p><b>ÚLTIMA PELÍCULA:</b></p>
+        }
+        <p><b>@(i+1) </b> - <b>Título:</b> @listaPeliculas[@i].Titulo - <b>Fecha:</b> @listaPeliculas[@i].Lanzamiento.ToShortDateString()</p>
+    }
+}
+
+
+@code {
+    public string miColor { get; set; }
+    public string textSize { get; set; }
+    public List<Pelicula> listaPeliculas { get; set; }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        listaPeliculas = obtenerPeliculas();
+    }
+
+    private List<Pelicula> obtenerPeliculas() {
+
+        return new List<Pelicula>()
+        {
+            new Pelicula() {
+                Titulo = "Cars",
+                Lanzamiento = new DateTime(2002,05,26)
+            },
+            new Pelicula() {
+                Titulo = "Cars 2",
+                Lanzamiento = new DateTime(2006,07,30)
+            },
+            new Pelicula() {
+                Titulo = "Cars 3",
+                Lanzamiento = new DateTime(2010,02,05)
+            }
+        };
+    }
+}

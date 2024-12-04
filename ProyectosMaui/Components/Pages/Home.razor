@@ -1,0 +1,22 @@
+﻿@page "/"
+
+<h3>Color Switch</h3>
+<div style="width:200px; height: 200px; background-color: rgb(@red, @green, @blue);"></div>
+<br />
+<label>Red: @red</label>
+<input type="range" min="0" max="255" @bind="red" @bind:event="oninput" />
+<br />
+<label>Green: @green</label>
+<input type="range" min="0" max="255" @bind="green" @bind:event="oninput" />
+<br />
+<label>Blue: @blue</label>
+<input type="range" min="0" max="255" @bind="blue" @bind:event="oninput" />
+
+
+@code {
+    int red = 0;
+    int green = 0;
+    int blue = 0;
+
+
+}

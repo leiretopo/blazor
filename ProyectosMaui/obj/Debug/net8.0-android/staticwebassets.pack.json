@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\in2dm3-a\\Desktop\\Leire\\blazorGit\\ProyectosMaui\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\ProyectosMaui.styles.css",
+      "PackagePath": "staticwebassets\\ProyectosMaui.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\in2dm3-a\\Desktop\\Leire\\blazorGit\\ProyectosMaui\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\in2dm3-a\\Desktop\\Leire\\blazorGit\\ProyectosMaui\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\in2dm3-a\\Desktop\\Leire\\blazorGit\\ProyectosMaui\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\in2dm3-a\\Desktop\\Leire\\blazorGit\\ProyectosMaui\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\in2dm3-a\\Desktop\\Leire\\blazorGit\\ProyectosMaui\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.ProyectosMaui.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.build.ProyectosMaui.props",
+      "PackagePath": "build\\ProyectosMaui.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildMultiTargeting.ProyectosMaui.props",
+      "PackagePath": "buildMultiTargeting\\ProyectosMaui.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildTransitive.ProyectosMaui.props",
+      "PackagePath": "buildTransitive\\ProyectosMaui.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

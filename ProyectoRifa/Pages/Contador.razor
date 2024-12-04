@@ -1,0 +1,67 @@
+﻿@page "/contador"
+<h3>Contador</h3>
+
+<!--En el style, en color llamo al método cambiarColor para que me 
+devuelva un string del color dependiendo del valor del contador-->
+<h2 role="status" style="color: @cambiarColorSwitch(); font-size:50px"> @currentCount</h2>
+
+<!--Botones para decrementar, resetear e incrementar el contador-->
+<button class="btn btn-primary" @onclick="DecrementCount">Decrementar</button>
+<button class="btn btn-primary" @onclick="ResetCount">Resetear</button>
+<button class="btn btn-primary" @onclick="IncrementCount">Incrementar</button>
+
+@code {
+
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    private void DecrementCount()
+    {
+        currentCount--;
+    }
+
+    private void ResetCount()
+    {
+        currentCount = 0;
+
+    }
+
+    /*Método para poder cambiar el color del contador dependiendo del valor que tiene
+     * En el metodo devuelvo el color como string para usarlo en el style color: del h2 donde se muestra el contador
+    */
+    private String cambiarColor() {   
+        /*Si es menor a 0 devuelvo "red"*/
+        if (currentCount < 0) {
+            return "red";
+            /*Si es mayor a 0 devuelvo "green"*/
+        } else if(currentCount>0) {
+            return "green";
+            /*Si es igual a 0 devuelvo "black"*/
+        } else {
+            return "black";
+        }
+    }
+
+    private String cambiarColorSwitch()
+    {   
+        switch (currentCount) 
+        {
+            /*Si es menor a 0 devuelvo "red"*/
+            case < 0:
+                return "red";
+                break;
+            /*Si es mayor a 0 devuelvo "green"*/
+            case > 0:
+                return "green";
+                break;
+            /*Si es igual a 0 devuelvo "black"*/
+            default:
+                return "black";
+                break;
+        }
+    }
+}
