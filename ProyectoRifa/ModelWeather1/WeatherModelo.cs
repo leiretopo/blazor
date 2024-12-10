@@ -1,7 +1,8 @@
-﻿namespace ProyectoRifa.ModelOpenApi1
+﻿namespace ProyectoRifa.ModelWeather1
 {
 
-    public class WeatherModel
+
+    public class WeatherModelo
     {
         public float latitude { get; set; }
         public float longitude { get; set; }
@@ -9,7 +10,7 @@
         public int utc_offset_seconds { get; set; }
         public string timezone { get; set; }
         public string timezone_abbreviation { get; set; }
-        public int elevation { get; set; }
+        public float elevation { get; set; }
         public Current_Units current_units { get; set; }
         public Current current { get; set; }
         public Hourly_Units hourly_units { get; set; }
@@ -61,7 +62,5 @@
         public float[] temperature_2m_max { get; set; }
         public float[] temperature_2m_min { get; set; }
     }
-
-
 
 }
