@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoRifa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9eb077579e960f4fd1b3f54736303eedbfdcf25")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ccbc7c2946dad2804fc5442a1f006f25b88e320")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoRifa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoRifa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -18,14 +18,21 @@
         <p class="display-1">@weatherData.current.temperature_2m ºC</p>
         <p class="display-6">@Convertir(codigoTiempo)</p>
     </div>
+
+    <div class="card-group">
+        <WeatherCard day="@weatherData!.daily.time[0]" 
+        minTemp="@weatherData.daily.temperature_2m_min[0]" 
+        maxTemp="@weatherData.daily.temperature_2m_max[0]"
+        wcode="@Convertir(codigoTiempo)">
+    </WeatherCard>
+    </div>
 }
 
-<div class="card-group">
-    <WeatherCard></WeatherCard>
-</div>
-<p>@lat</p>
+
+
+@* <p>@lat</p>
 <p>@lon</p>
-<p>@codigoTiempo</p>
+<p>@codigoTiempo</p> *@
 
 
 @code {

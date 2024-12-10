@@ -1,15 +1,23 @@
 ﻿<div class="card-group">
     <div class="card border-dark mb-3" style="max-width:50rem;">
         <div class="text-center">
-            <div class="card-header">2025-01-01</div>
+            <div class="card-header">@day</div>
             <div class="card-body">
-                <h5> 5ºC / 10ºC</h5>
-                <p class="card-text">Rainy</p>
+                <h5>@minTemp / @maxTemp</h5>
+                <p class="card-text">@wcode</p>
             </div>
         </div>
     </div>
 </div>
 
 @code {
+    [Parameter]
+    public string day { get; set; }
+    [Parameter]
+    public float minTemp { get; set; }
+    [Parameter]
+    public float maxTemp { get; set; }
+    [Parameter]
+    public string wcode { get; set; }
 
 }
