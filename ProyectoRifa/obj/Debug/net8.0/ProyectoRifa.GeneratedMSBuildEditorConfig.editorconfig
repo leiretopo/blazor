@@ -26,6 +26,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/in2dm3-a/Desktop/Leire/blazorGit/ProyectoRifa/Components/WeatherCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xXZWF0aGVyQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/in2dm3-a/Desktop/Leire/blazorGit/ProyectoRifa/Pages/BMI.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQk1JLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/in2dm3-a/Desktop/Leire/blazorGit/ProyectoRifa/Pages/Contador.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFkb3IucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/in2dm3-a/Desktop/Leire/blazorGit/ProyectoRifa/Pages/Switcher.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3dpdGNoZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/in2dm3-a/Desktop/Leire/blazorGit/ProyectoRifa/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/in2dm3-a/Desktop/Leire/blazorGit/ProyectoRifa/_Imports.razor]

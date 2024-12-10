@@ -1,0 +1,55 @@
+﻿@page "/bmi"
+<h3>Calculadora de Índice de Masa Corporal</h3>
+<p>Calcula tu BMI</p>
+<input type="text" placeholder="Altura" @bind=height class="form-control" />
+<input type="text" placeholder="Peso" @bind=weight class="form-control mt-2" />
+<input type="text" placeholder="Peso" @bind=result disabled class="form-control mt-2" />
+
+<div class="text-center align-content-center">
+    <button @onclick=miCalculo class="btn btn-primary mt-2" style="width:450px">Calcular</button>
+</div>
+
+@code {
+    /** Enunciado:
+Calculadora IMC(Índice de Masa Corporal).
+Fórmula BMI = weight / (height * height)
+BMI< 18.5 you are underweight
+BMI >= 18.5   && BMI <=24.9 you are normal
+BMI >= 25   &&  BMI <=29.9  you are overweight
+BMI >= 30 you have obesity
+
+
+Comprobar que no están vacíos los input de altura y peso.
+Hacer dos versiones: utilizando if y utilizando switch.*/
+    float height ;
+    float weight ;
+    string result = "";
+    float bmi = 0;
+
+    private void miCalculo()
+    {
+        if(height != null && weight != null)
+        {
+            var bmi = weight / (height * height);
+            switch (bmi)
+            {
+                case < (float)18.5:
+                    result = $"You are underweight";
+                    break;
+                case >= (float)18.5 and <= (float)24.9:
+                    result = $"You are normal";
+                    break;
+                case >= (float)25 and <= (float)29.9:
+                    result = $"You are overweight";
+                    break;
+                default:
+                    result = $"You have obesity";
+                    break;
+            }
+        }
+      
+
+    }
+   
+
+}

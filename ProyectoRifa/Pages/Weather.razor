@@ -1,0 +1,47 @@
+﻿@page "/weather"
+@using ProyectoRifa.ModelGeoapify
+@inject HttpClient miHttp
+
+<PageTitle>Wather</PageTitle>
+<h1>Weather</h1>
+<input type="text" placeholder="Ciudad" @bind=ciudad class="form-control mt-2" />
+
+<div class="text-center">
+    <button @onclick=GetWeather class="btn btn-primary mt-2" style="width:250px">Calcular</button>
+</div>
+
+<div class="text-center">
+    <p class="display-5">New York</p>
+    <p class="display-1">5ºC</p>
+    <p class="display-6">Rainy</p>
+</div>
+<div class="card-group">
+    <WeatherCard></WeatherCard>
+</div>
+<p>@lat</p>
+<p>@lon</p>
+
+
+@code {
+    string ciudad = "";
+    float lat;
+    float lon;
+
+    public async Task GetWeather()
+    {
+        
+
+        //var cityData2 = await miHttp.GetFromJsonAsync<CityData>(MisEndPoints.GetGeoApifyEndPoint(ciudad));
+       
+
+        var cityData =
+        await miHttp.GetFromJsonAsync<CityData>("https://api.geoapify.com/v1/geocode/search?text=" +
+        ciudad + "&format=json&apiKey=902c788c26b9495d85d43bb66db8c554");
+        lat = cityData!.results[0].lat;
+        lon = cityData!.results[0].lon;
+
+        var weatherData = 
+        await miHttp.GetFromJsonAsync<WeatherModel>("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,relative_humidity_2m&hourly=temperature_2m&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Europe%2FLondon");
+    }
+
+}
