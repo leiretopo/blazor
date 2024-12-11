@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ProyectoRifa",
   "resources": {
-    "hash": "sha256-LOGXxzPbzMCHS8Ni4/zNp3HTIsEm+DLBEVwWytDwBuo=",
+    "hash": "sha256-KYe2ebtiTMTi3Fq/RTFc8RN9U6GHjEfQnth61D+APec=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.ezzlkwkzyj.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-Gz8PyW2/fwihe5ul81OwmRUrU71r+KtbyRw6xlOGD+Q=",
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
-      "ProyectoRifa.wasm": "sha256-j+Lkuj3ATFX9M5aB+LzIKOtaTKpe4sZPifNok9EDaTM="
+      "ProyectoRifa.wasm": "sha256-f0gBLXDbXJq/o4iL7K6QlfVr3p3TaQcmrGM3AvAF2W0="
     },
     "pdb": {
-      "ProyectoRifa.pdb": "sha256-xQVm5MhyV/YbLE7AGco5z2b6c4kAfnlFG91z6yxXFto="
+      "ProyectoRifa.pdb": "sha256-1iRRzV75n2le2wq4Sif2IwxfcrVFUQ6pQCD2mBzSXy0="
     }
   },
   "cacheBootResources": true,
